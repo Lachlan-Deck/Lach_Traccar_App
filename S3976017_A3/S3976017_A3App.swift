@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct S3976017_A3App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainPageView().modelContainer(for: Mood.self)
         }
     }
 }
